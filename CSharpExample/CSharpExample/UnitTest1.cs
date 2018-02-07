@@ -28,6 +28,15 @@ namespace csharp_example
 			driver.FindElement(By.Name("q")).Submit();
 			wait.Until(ExpectedConditions.TitleIs("webdriver - Google Search"));
 		}
+		[Test]
+		public void LitecartLogin()
+		{
+			driver.Url = "http://localhost:8080/litecart/admin/login.php";
+			driver.FindElement(By.Name("username")).SendKeys("admin");
+			driver.FindElement(By.Name("password")).SendKeys("admin");
+			driver.FindElement(By.Name("login")).Click();
+			wait.Until(ExpectedConditions.TitleIs("My Store"));
+		}
 
 		[TearDown]
 		public void Stop()
