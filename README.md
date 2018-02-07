@@ -1,2 +1,2 @@
 # SeleniumTest
-SeleniumTest description version 1
+SeleniumTest description
