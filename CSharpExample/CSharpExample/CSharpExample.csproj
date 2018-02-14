@@ -65,6 +65,11 @@
     <Compile Include="FirstTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LoginTest.cs" />
+    <Compile Include="LoginIETest.cs" />
+    <Compile Include="LoginFFTest.cs" />
+    <Compile Include="LoginESRFFTest.cs" />
+    <Compile Include="LoginNightlyTest.cs" />
+    <Compile Include="CheckMenu7.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
