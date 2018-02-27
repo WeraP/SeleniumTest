@@ -71,6 +71,7 @@
     <Compile Include="LoginNightlyTest.cs" />
     <Compile Include="CheckMenu7.cs" />
     <Compile Include="CheckStickers8.cs" />
+    <Compile Include="Countries9.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
