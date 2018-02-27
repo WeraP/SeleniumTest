@@ -70,6 +70,7 @@
     <Compile Include="LoginESRFFTest.cs" />
     <Compile Include="LoginNightlyTest.cs" />
     <Compile Include="CheckMenu7.cs" />
+    <Compile Include="CheckStickers8.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
