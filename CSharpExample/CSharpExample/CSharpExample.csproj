@@ -73,6 +73,7 @@
     <Compile Include="CheckStickers8.cs" />
     <Compile Include="Countries9.cs" />
     <Compile Include="Item10.cs" />
+    <Compile Include="Registration11.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
