@@ -74,9 +74,16 @@
     <Compile Include="Countries9.cs" />
     <Compile Include="Item10.cs" />
     <Compile Include="Registration11.cs" />
+    <Compile Include="AddItem12.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\img.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
