@@ -75,6 +75,8 @@
     <Compile Include="Item10.cs" />
     <Compile Include="Registration11.cs" />
     <Compile Include="AddItem12.cs" />
+    <Compile Include="General.cs" />
+    <Compile Include="Basket13.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
