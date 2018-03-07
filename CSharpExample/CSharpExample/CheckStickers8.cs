@@ -21,12 +21,12 @@ namespace CSharpExample
 		}
 
 		[Test]
-		public void CheckStickers()
+		public void CheckStickersBase()
 		{
 			driver.Url = "http://localhost:8080/litecart/en/";
 			wait.Until(ExpectedConditions.TitleIs("Online Store | My Store"));
 
-			var products = driver.FindElements(By.CssSelector(".image-wrapper"));
+			var products = driver.FindElements(By.CssSelector(".product.column.shadow.hover-light"));
 			foreach (var product in products)
 			{
 				Assert.IsTrue(product.FindElements(By.CssSelector(".sticker")).Count == 1);
