@@ -9,7 +9,7 @@ using System.Diagnostics;
 namespace CSharpExample
 {
 	[TestFixture]
-	public class Couuntries
+	public class Countries9
 	{
 		private IWebDriver driver;
 		private WebDriverWait wait;

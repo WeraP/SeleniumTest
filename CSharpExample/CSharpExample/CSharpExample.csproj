@@ -77,6 +77,8 @@
     <Compile Include="AddItem12.cs" />
     <Compile Include="General.cs" />
     <Compile Include="Basket13.cs" />
+    <Compile Include="EditCountry14.cs" />
+    <Compile Include="Zones9.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
