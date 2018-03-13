@@ -64,7 +64,14 @@
   <ItemGroup>
     <Compile Include="FirstTest.cs" />
     <Compile Include="GeneraFiring.cs" />
-    <Compile Include="Lesson 15\PO_Basket_15.cs" />
+    <Compile Include="Lesson 11\App\Application.cs" />
+    <Compile Include="Lesson 11\Pages\Page.cs" />
+    <Compile Include="Lesson 11\Pages\StorePage.cs" />
+    <Compile Include="Lesson 11\Pages\ProductPage.cs" />
+    <Compile Include="Lesson 11\Pages\BasketPage.cs" />
+    <Compile Include="Lesson 11\PO_Basket_19.cs" />
+    <Compile Include="Lesson 11\Tests\TestBase.cs" />
+    <Compile Include="Lesson 11\Tests\ProductsCartTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LoginTest.cs" />
     <Compile Include="LoginIETest.cs" />
@@ -86,7 +93,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Lesson 11\Model\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Images\img.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
