@@ -28,26 +28,15 @@ namespace CSharpExample
 			string mainWindow = driver.CurrentWindowHandle;
 			ICollection<string> oldWindows = driver.WindowHandles;
 
-			driver.FindElement(By.CssSelector("a[href*=alpha-2")).Click();
-			MoveToWindow(mainWindow, oldWindows);
+			IWebElement[] elementsLink = driver.FindElements(By.CssSelector("td > a[target=_blank]")).ToArray();
+			Assert.AreEqual(7, elementsLink.Length);
 
-			driver.FindElement(By.CssSelector("a[href*=alpha-3")).Click();
-			MoveToWindow(mainWindow, oldWindows);
+			foreach (var elementLink in elementsLink)
+			{
+				elementLink.Click();
+				MoveToWindow(mainWindow, oldWindows);
+			}
 
-			driver.FindElements(By.CssSelector("a[href*=Regular_expression"))[0].Click();
-			MoveToWindow(mainWindow, oldWindows);
-
-			driver.FindElement(By.CssSelector("a[href*=address")).Click();
-			MoveToWindow(mainWindow, oldWindows);
-
-			driver.FindElements(By.CssSelector("a[href*=Regular_expression"))[0].Click();
-			MoveToWindow(mainWindow, oldWindows);
-
-			driver.FindElement(By.CssSelector("a[href*=currency")).Click();
-			MoveToWindow(mainWindow, oldWindows);
-
-			driver.FindElement(By.CssSelector("a[href*=calling")).Click();
-			MoveToWindow(mainWindow, oldWindows);
 		}
 
 		private void MoveToWindow(string mainWindow, ICollection<string> oldWindows)
